@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86708118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: -11.9, z: -8.571323}
+  m_LocalPosition: {x: 15.32, y: -11.9, z: -8.571323}
   m_LocalScale: {x: 0.6, y: 0.6, z: -0.6}
   m_Children:
   - {fileID: 1649713290}
@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90733408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 79.1, y: -12, z: -8.903114}
+  m_LocalPosition: {x: 59.3, y: -12, z: -8.903114}
   m_LocalScale: {x: 0.6, y: 0.6, z: -0.6}
   m_Children:
   - {fileID: 1604776853}
@@ -358,6 +358,127 @@ MonoBehaviour:
     c2: 0
     c3: 0
     c4: 0
+--- !u!1 &134093411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134093412}
+  - component: {fileID: 134093414}
+  - component: {fileID: 134093413}
+  - component: {fileID: 134093415}
+  m_Layer: 0
+  m_Name: Circle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &134093412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134093411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2, y: 2, z: 8.903114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2137889827}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &134093413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134093411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f77eeb4f4d26a4c96f62d2de52b329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 647724101}
+  m_normalizedT: 0
+  movementLerpModifier: 10
+  travelTime: 5
+--- !u!212 &134093414
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134093411}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &134093415
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134093411}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &175247940
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,11 +693,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 50.98172, y: -9.810771, z: -8.060972}
+  m_position: {x: 33.48172, y: -9.810771, z: -8.060972}
   m_precedingControlPointLocalPosition: {x: 4.731144, y: 1.1573362, z: 0.026367188}
-  m_precedingControlPointPosition: {x: 53.820408, y: -9.116369, z: -8.076792}
+  m_precedingControlPointPosition: {x: 36.320408, y: -9.116369, z: -8.076792}
   m_followingControlPointLocalPosition: {x: -4.731144, y: -1.1573362, z: -0.026367188}
-  m_followingControlPointPosition: {x: 48.143036, y: -10.505173, z: -8.045152}
+  m_followingControlPointPosition: {x: 30.643034, y: -10.505173, z: -8.045152}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -838,11 +959,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 52.019463, y: -12.871436, z: -7.9717054}
+  m_position: {x: 34.519463, y: -12.871436, z: -7.9717054}
   m_precedingControlPointLocalPosition: {x: 3.7518082, y: 0.15142822, z: 0.000120162964}
-  m_precedingControlPointPosition: {x: 54.270546, y: -12.780579, z: -7.971778}
+  m_precedingControlPointPosition: {x: 36.770546, y: -12.780579, z: -7.971778}
   m_followingControlPointLocalPosition: {x: -3.7518082, y: -0.15142822, z: -0.000120162964}
-  m_followingControlPointPosition: {x: 49.768375, y: -12.962293, z: -7.9716334}
+  m_followingControlPointPosition: {x: 32.268375, y: -12.962293, z: -7.9716334}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -895,11 +1016,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 51.281857, y: -14.080774, z: -9.171324}
+  m_position: {x: 33.781857, y: -14.080774, z: -9.171324}
   m_precedingControlPointLocalPosition: {x: -1, y: 0, z: 0}
-  m_precedingControlPointPosition: {x: 50.681858, y: -14.080774, z: -9.171324}
+  m_precedingControlPointPosition: {x: 33.181858, y: -14.080774, z: -9.171324}
   m_followingControlPointLocalPosition: {x: 1, y: 0, z: 0}
-  m_followingControlPointPosition: {x: 51.88186, y: -14.080774, z: -9.171324}
+  m_followingControlPointPosition: {x: 34.38186, y: -14.080774, z: -9.171324}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -1043,11 +1164,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 52.832478, y: -5.0207057, z: -8.048301}
+  m_position: {x: 35.332478, y: -5.0207057, z: -8.048301}
   m_precedingControlPointLocalPosition: {x: -2.4478989, y: -1.8492618, z: 0.0057373047}
-  m_precedingControlPointPosition: {x: 51.36374, y: -6.130263, z: -8.0517435}
+  m_precedingControlPointPosition: {x: 33.86374, y: -6.130263, z: -8.0517435}
   m_followingControlPointLocalPosition: {x: 2.4478989, y: 1.8492618, z: -0.0057373047}
-  m_followingControlPointPosition: {x: 54.301216, y: -3.9111488, z: -8.044859}
+  m_followingControlPointPosition: {x: 36.801216, y: -3.9111488, z: -8.044859}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -1100,11 +1221,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 60.03142, y: -6.262915, z: -7.974766}
+  m_position: {x: 42.53142, y: -6.262915, z: -7.974766}
   m_precedingControlPointLocalPosition: {x: -0.20464706, y: 1.1290894, z: 0.0037841797}
-  m_precedingControlPointPosition: {x: 59.908634, y: -5.5854616, z: -7.9770365}
+  m_precedingControlPointPosition: {x: 42.408634, y: -5.5854616, z: -7.9770365}
   m_followingControlPointLocalPosition: {x: 0.20464706, y: -1.1290894, z: -0.0037841797}
-  m_followingControlPointPosition: {x: 60.154213, y: -6.9403687, z: -7.972495}
+  m_followingControlPointPosition: {x: 42.654213, y: -6.9403687, z: -7.972495}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -6184,11 +6305,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 56.5331, y: -12.560381, z: -7.9713235}
+  m_position: {x: 39.0331, y: -12.560381, z: -7.9713235}
   m_precedingControlPointLocalPosition: {x: 5.1122246, y: 3.2638083, z: 0}
-  m_precedingControlPointPosition: {x: 59.600433, y: -10.602096, z: -7.9713235}
+  m_precedingControlPointPosition: {x: 42.100433, y: -10.602096, z: -7.9713235}
   m_followingControlPointLocalPosition: {x: -5.1122246, y: -3.2638083, z: 0}
-  m_followingControlPointPosition: {x: 53.465763, y: -14.518666, z: -7.9713235}
+  m_followingControlPointPosition: {x: 35.965763, y: -14.518666, z: -7.9713235}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -6467,11 +6588,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 30.90945, y: -12.9238, z: -8.212448}
+  m_position: {x: 21.22945, y: -12.9238, z: -8.212448}
   m_precedingControlPointLocalPosition: {x: 3.8328686, y: 1.8563223, z: 0.0625}
-  m_precedingControlPointPosition: {x: 33.20917, y: -11.810007, z: -8.2499485}
+  m_precedingControlPointPosition: {x: 23.529171, y: -11.810007, z: -8.2499485}
   m_followingControlPointLocalPosition: {x: -3.8328686, y: -1.8563223, z: -0.0625}
-  m_followingControlPointPosition: {x: 28.60973, y: -14.037594, z: -8.174948}
+  m_followingControlPointPosition: {x: 18.92973, y: -14.037594, z: -8.174948}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -6556,11 +6677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 58.966137, y: -11.021778, z: -7.971542}
+  m_position: {x: 41.466137, y: -11.021778, z: -7.971542}
   m_precedingControlPointLocalPosition: {x: 0.48272324, y: 0.39190578, z: 0.00024223328}
-  m_precedingControlPointPosition: {x: 59.255768, y: -10.786634, z: -7.9716873}
+  m_precedingControlPointPosition: {x: 41.755768, y: -10.786634, z: -7.9716873}
   m_followingControlPointLocalPosition: {x: -0.48272324, y: -0.39190578, z: -0.00024223328}
-  m_followingControlPointPosition: {x: 58.676502, y: -11.256922, z: -7.9713964}
+  m_followingControlPointPosition: {x: 41.176502, y: -11.256922, z: -7.9713964}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -6570,6 +6691,62 @@ MonoBehaviour:
     c2: 0
     c3: 0
     c4: 0
+--- !u!1 &647724100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647724102}
+  - component: {fileID: 647724101}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &647724101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647724100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3dbf94c21a22d74d895b2051a04ba1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_loop: 1
+  drawGizmos: 0
+  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
+  gizmoSmoothness: 4
+  m_autoConstructMode: 0
+  m_autoCalculateNormals: 0
+  m_autoCalculatedNormalsAngle: 0
+  m_autoCalculatedIntermediateNormalsCount: 10
+  m_evenlySpacedPointsResolution: 10
+  m_evenlySpacedPointsAccuracy: 3
+  m_pointCacheResolution: 100
+--- !u!4 &647724102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647724100}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.5, y: 8.1, z: 3.0874686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1424771185}
+  - {fileID: 1059591105}
+  m_Father: {fileID: 2137889827}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674831447
 GameObject:
   m_ObjectHideFlags: 0
@@ -6594,7 +6771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674831447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.1, y: -3.8, z: -8.571323}
+  m_LocalPosition: {x: 34.6, y: -3.8, z: -8.571323}
   m_LocalScale: {x: 0.6, y: 0.6, z: -0.6}
   m_Children:
   - {fileID: 1445214206}
@@ -6846,11 +7023,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 78.00005, y: -13.845872, z: -11.355596}
+  m_position: {x: 58.200054, y: -13.845872, z: -11.355596}
   m_precedingControlPointLocalPosition: {x: -49.081047, y: -9.269266, z: 0}
-  m_precedingControlPointPosition: {x: 48.551422, y: -19.407433, z: -11.355596}
+  m_precedingControlPointPosition: {x: 28.751425, y: -19.407433, z: -11.355596}
   m_followingControlPointLocalPosition: {x: 4.0775023, y: 6.6264396, z: 0}
-  m_followingControlPointPosition: {x: 80.446556, y: -9.870008, z: -11.355596}
+  m_followingControlPointPosition: {x: 60.646557, y: -9.870008, z: -11.355596}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -6903,11 +7080,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 59.478558, y: -10.018215, z: -7.9721932}
+  m_position: {x: 41.978558, y: -10.018215, z: -7.9721932}
   m_precedingControlPointLocalPosition: {x: 0.8441887, y: 2.074832, z: 0.0009613037}
-  m_precedingControlPointPosition: {x: 59.98507, y: -8.773315, z: -7.9727697}
+  m_precedingControlPointPosition: {x: 42.48507, y: -8.773315, z: -7.9727697}
   m_followingControlPointLocalPosition: {x: -0.8441887, y: -2.074832, z: -0.0009613037}
-  m_followingControlPointPosition: {x: 58.972042, y: -11.263114, z: -7.9716163}
+  m_followingControlPointPosition: {x: 41.472042, y: -11.263114, z: -7.9716163}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -7160,11 +7337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 50.66794, y: -5.55164, z: -8.158823}
+  m_position: {x: 33.16794, y: -5.55164, z: -8.158823}
   m_precedingControlPointLocalPosition: {x: -2.6434517, y: 0.44694138, z: 0.1875}
-  m_precedingControlPointPosition: {x: 49.081867, y: -5.2834754, z: -8.271323}
+  m_precedingControlPointPosition: {x: 31.58187, y: -5.2834754, z: -8.271323}
   m_followingControlPointLocalPosition: {x: 2.6434517, y: -0.44694138, z: -0.1875}
-  m_followingControlPointPosition: {x: 52.25401, y: -5.819805, z: -8.046324}
+  m_followingControlPointPosition: {x: 34.75401, y: -5.819805, z: -8.046324}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -7653,11 +7830,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 79.766975, y: -7.869616, z: -11.355596}
+  m_position: {x: 59.966976, y: -7.869616, z: -11.355596}
   m_precedingControlPointLocalPosition: {x: -5.134636, y: -9.646812, z: 0}
-  m_precedingControlPointPosition: {x: 76.686195, y: -13.657703, z: -11.355596}
+  m_precedingControlPointPosition: {x: 56.886192, y: -13.657703, z: -11.355596}
   m_followingControlPointLocalPosition: {x: 43.191315, y: 10.779453, z: 0}
-  m_followingControlPointPosition: {x: 105.68176, y: -1.4019442, z: -11.355596}
+  m_followingControlPointPosition: {x: 85.88177, y: -1.4019442, z: -11.355596}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -8233,6 +8410,63 @@ MonoBehaviour:
   m_precedingControlPointPosition: {x: 189.16293, y: -52.26432, z: -8.271323}
   m_followingControlPointLocalPosition: {x: 0.7878113, y: 1.4412274, z: 0}
   m_followingControlPointPosition: {x: 189.63562, y: -51.399582, z: -8.271323}
+  m_handleMode: 2
+  m_normal: {x: 0, y: 1, z: 0}
+  m_autoCalculatedNormalAngleOffset: 0
+  m_intermediateNormals: []
+  m_extraData:
+    c1: 0
+    c2: 0
+    c3: 0
+    c4: 0
+--- !u!1 &1059591104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1059591105}
+  - component: {fileID: 1059591106}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1059591105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059591104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.354263, y: -6.0232296, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 647724102}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1059591106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059591104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_position: {x: 84.294266, y: 3.456771, z: -4.8156457}
+  m_precedingControlPointLocalPosition: {x: -1, y: -0, z: 0}
+  m_precedingControlPointPosition: {x: 83.294266, y: 3.456771, z: -4.8156457}
+  m_followingControlPointLocalPosition: {x: 1, y: 0, z: -0}
+  m_followingControlPointPosition: {x: 85.294266, y: 3.456771, z: -4.8156457}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -14290,11 +14524,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 57.968185, y: -5.5863667, z: -8.022886}
+  m_position: {x: 40.468185, y: -5.5863667, z: -8.022886}
   m_precedingControlPointLocalPosition: {x: -1.3055916, y: 1.7716675, z: 0.0546875}
-  m_precedingControlPointPosition: {x: 57.18483, y: -4.523366, z: -8.055698}
+  m_precedingControlPointPosition: {x: 39.68483, y: -4.523366, z: -8.055698}
   m_followingControlPointLocalPosition: {x: 1.3055916, y: -1.7716675, z: -0.0546875}
-  m_followingControlPointPosition: {x: 58.751537, y: -6.6493673, z: -7.990073}
+  m_followingControlPointPosition: {x: 41.251537, y: -6.6493673, z: -7.990073}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -14404,11 +14638,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 54.886227, y: -8.422162, z: -7.9848}
+  m_position: {x: 37.386227, y: -8.422162, z: -7.9848}
   m_precedingControlPointLocalPosition: {x: 0.6402092, y: -3.8004684, z: 0.0146484375}
-  m_precedingControlPointPosition: {x: 55.27035, y: -10.702443, z: -7.993589}
+  m_precedingControlPointPosition: {x: 37.77035, y: -10.702443, z: -7.993589}
   m_followingControlPointLocalPosition: {x: -0.6402092, y: 3.8004684, z: -0.0146484375}
-  m_followingControlPointPosition: {x: 54.5021, y: -6.141881, z: -7.976011}
+  m_followingControlPointPosition: {x: 37.0021, y: -6.141881, z: -7.976011}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -19316,6 +19550,63 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1424771184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424771185}
+  - component: {fileID: 1424771186}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1424771185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424771184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.370998, y: -5.9374647, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 647724102}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1424771186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424771184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_position: {x: 84.311005, y: 3.5425358, z: -4.8156457}
+  m_precedingControlPointLocalPosition: {x: 1, y: 0, z: 0}
+  m_precedingControlPointPosition: {x: 85.311005, y: 3.5425358, z: -4.8156457}
+  m_followingControlPointLocalPosition: {x: -1, y: -0, z: -0}
+  m_followingControlPointPosition: {x: 83.311005, y: 3.5425358, z: -4.8156457}
+  m_handleMode: 2
+  m_normal: {x: 0, y: 1, z: 0}
+  m_autoCalculatedNormalAngleOffset: 0
+  m_intermediateNormals: []
+  m_extraData:
+    c1: 0
+    c2: 0
+    c3: 0
+    c4: 0
 --- !u!1 &1426588891
 GameObject:
   m_ObjectHideFlags: 0
@@ -19550,11 +19841,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 29.573664, y: -9.515058, z: -8.324948}
+  m_position: {x: 19.893663, y: -9.515058, z: -8.324948}
   m_precedingControlPointLocalPosition: {x: -1.5529861, y: -7.0308294, z: 0}
-  m_precedingControlPointPosition: {x: 28.641872, y: -13.733556, z: -8.324948}
+  m_precedingControlPointPosition: {x: 18.961872, y: -13.733556, z: -8.324948}
   m_followingControlPointLocalPosition: {x: 1.5529861, y: 7.0308294, z: 0}
-  m_followingControlPointPosition: {x: 30.505455, y: -5.29656, z: -8.324948}
+  m_followingControlPointPosition: {x: 20.825455, y: -5.29656, z: -8.324948}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -19721,11 +20012,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 49.066784, y: -11.26508, z: -7.971651}
+  m_position: {x: 31.566784, y: -11.26508, z: -7.971651}
   m_precedingControlPointLocalPosition: {x: -2.0451088, y: -0.29234695, z: 0.000022888184}
-  m_precedingControlPointPosition: {x: 47.839718, y: -11.440489, z: -7.971665}
+  m_precedingControlPointPosition: {x: 30.339718, y: -11.440489, z: -7.971665}
   m_followingControlPointLocalPosition: {x: 2.0451088, y: 0.29234695, z: -0.000022888184}
-  m_followingControlPointPosition: {x: 50.29385, y: -11.089673, z: -7.9716377}
+  m_followingControlPointPosition: {x: 32.79385, y: -11.089673, z: -7.9716377}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -19778,11 +20069,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 47.61617, y: -12.563451, z: -8.571323}
+  m_position: {x: 30.116169, y: -12.563451, z: -8.571323}
   m_precedingControlPointLocalPosition: {x: 0.73236847, y: -1.3901072, z: 0.5}
-  m_precedingControlPointPosition: {x: 48.055588, y: -13.397515, z: -8.871324}
+  m_precedingControlPointPosition: {x: 30.55559, y: -13.397515, z: -8.871324}
   m_followingControlPointLocalPosition: {x: -0.73236847, y: 1.3901072, z: -0.5}
-  m_followingControlPointPosition: {x: 47.176746, y: -11.729386, z: -8.271323}
+  m_followingControlPointPosition: {x: 29.676748, y: -11.729386, z: -8.271323}
   m_handleMode: 2
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -25573,11 +25864,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 22.714727, y: -9.188859, z: -8.324948}
+  m_position: {x: 13.034728, y: -9.188859, z: -8.324948}
   m_precedingControlPointLocalPosition: {x: 11.925768, y: 0.1921382, z: 0}
-  m_precedingControlPointPosition: {x: 29.87019, y: -9.073576, z: -8.324948}
+  m_precedingControlPointPosition: {x: 20.19019, y: -9.073576, z: -8.324948}
   m_followingControlPointLocalPosition: {x: -6.711893, y: -6.4329877, z: 0}
-  m_followingControlPointPosition: {x: 18.687592, y: -13.048652, z: -8.324948}
+  m_followingControlPointPosition: {x: 9.007591, y: -13.048652, z: -8.324948}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -25921,11 +26212,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 21.85391, y: -14.110667, z: -8.324948}
+  m_position: {x: 12.17391, y: -14.110667, z: -8.324948}
   m_precedingControlPointLocalPosition: {x: 1.5448322, y: -2.5427647, z: -0.5}
-  m_precedingControlPointPosition: {x: 22.78081, y: -15.636326, z: -8.024948}
+  m_precedingControlPointPosition: {x: 13.100809, y: -15.636326, z: -8.024948}
   m_followingControlPointLocalPosition: {x: -0.9311695, y: 1.5326872, z: 0.30138206}
-  m_followingControlPointPosition: {x: 21.295208, y: -13.191054, z: -8.505777}
+  m_followingControlPointPosition: {x: 11.615209, y: -13.191054, z: -8.505777}
   m_handleMode: 1
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -26081,3 +26372,35 @@ MonoBehaviour:
     c2: 0
     c3: 0
     c4: 0
+--- !u!1 &2137889826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2137889827}
+  m_Layer: 0
+  m_Name: BezierSet (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2137889827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137889826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 79.44, y: 1.38, z: -8.903114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 647724102}
+  - {fileID: 134093412}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
