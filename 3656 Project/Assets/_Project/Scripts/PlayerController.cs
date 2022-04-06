@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _acceleration;
     [SerializeField] private float _jumpForce;
     [SerializeField] private InputActionAsset actions;
+    [SerializeField] private Animator _animator;
 
     // Start is called before the first frame update
     void Start()
@@ -81,14 +82,21 @@ public class PlayerController : MonoBehaviour
     private void ApplyVelocity(Vector2 move)
     {
 
+        var hold = move;
+        hold.y = 0f;
+        float facing = hold.normalized.x;
+
+        if (facing == 0)
+        {
+            facing = this._animator.transform.localScale.x;
+        }
+
+
+        this._animator.transform.localScale = new Vector3(facing, this._animator.transform.localScale.y, this._animator.transform.localScale.z);
+
         this._input = move;
         this._wantToMove = move.x != 0f;
-    }
 
-    private void StopApply(Vector2 move)
-    {
-
-        this._wantToMove = move.x != 0f;
-
+        this._animator.SetBool("move", this._wantToMove);
     }
 }
